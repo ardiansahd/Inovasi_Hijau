@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inovasi - Inovasi Hijau</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/logo.svg" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .transparent-bg {
+            background-color:rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 40px;
+            cursor: pointer;
+        }
+        .p {
+            color: #2e876f; /* Dark green text color */
+        }
+         /* Warna navbar baru */
+         .navbar-custom {
+            background-color: #004d4d; /* Warna dark teal */
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // Ambil URL halaman sebelumnya
+        var previousURL = document.referrer;
+
+        // Terapkan URL sebagai background jika ada
+        if (previousURL) {
+            document.body.style.backgroundImage = 'url(' + previousURL + ')';
+        } else {
+            document.body.style.backgroundColor = '#f0f0f0'; // Warna default jika tidak ada halaman sebelumnya
+        }
+    </script>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="html.html">
+                <img src="img/logo.jpeg" alt="Logo" style="height: 60px; margin-right: 20px; border-radius: 50%;">
+                Inovasi Hijau
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="window.history.back();"><i class="fas fa-times"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="window.history.back();"><i class="fas fa-times"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="window.history.back();"><i class="fas fa-times"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Inovasi Section -->
+    <main class="container mt-5">
+        <section class="text-justify transparent-bg position-relative">
+            <span class="close-btn" onclick="window.history.back();">×</span>
+            <h1 class="mb-4 text-center">Inovasi</h1>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="img/inovasi.jpeg" alt="Inovasi" class="img-fluid mb-4">
+                </div>
+                <div class="col-md-8">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <p>Inovasi adalah proses menciptakan sesuatu yang baru atau memperbaiki sesuatu yang sudah ada untuk memberikan nilai tambah. Ini bisa berupa produk, layanan, proses, atau ide yang baru dan bermanfaat. Tujuan utama inovasi adalah untuk meningkatkan kualitas hidup dan efisiensi dalam berbagai aspek kehidupan. Beberapa tujuan spesifik inovasi meliputi meningkatkan kualitas produk atau layanan, menciptakan pasar baru, meningkatkan produktivitas, dan memecahkan masalah.
+                            </p><p><b>MANFAAT</b></p>
+                            <p>Manfaat inovasi sangat beragam. Inovasi dapat meningkatkan daya saing, membantu perusahaan atau individu tetap relevan dan kompetitif di pasar. Selain itu, inovasi juga dapat meningkatkan efisiensi dengan mengurangi biaya dan waktu yang dibutuhkan untuk menghasilkan produk atau layanan. Inovasi juga berperan penting dalam meningkatkan kualitas hidup dengan menyediakan solusi yang membuat hidup lebih mudah dan nyaman. Selain itu, inovasi juga dapat mendorong pertumbuhan ekonomi dengan membuka peluang kerja dan menciptakan industri baru.
+                            </p>
+                            <p><b>JENIS-JENIS</b></p>
+                            <p>Inovasi dapat dibagi menjadi beberapa jenis, termasuk inovasi produk, inovasi proses, inovasi layanan, dan inovasi model bisnis. Inovasi produk melibatkan penciptaan atau peningkatan produk baru, sementara inovasi proses berfokus pada perbaikan atau pengembangan proses produksi atau operasional. Inovasi layanan melibatkan pengembangan layanan baru atau peningkatan layanan yang ada, dan inovasi model bisnis mencakup penciptaan model bisnis baru yang lebih efisien atau menguntungkan.
+                            </p>
+                            <p><b>CIRI- CIRI</b></p>
+                           <p> Ciri-ciri inovasi meliputi kebaruan, perencanaan yang baik, karakteristik unik, dan memberikan manfaat yang signifikan. Inovasi harus mengandung elemen kebaruan yang belum ada sebelumnya dan dilakukan melalui proses yang direncanakan dengan baik. Inovasi juga harus memiliki karakteristik unik yang membedakannya dari yang lain dan memberikan nilai tambah atau manfaat yang signifikan. Dengan terus berinovasi, kita dapat menghadapi tantangan masa depan dengan lebih baik dan menciptakan dunia yang lebih baik.
+                        </p>
+                     </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center bg-light py-4 mt-5">
+        
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
